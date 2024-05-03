@@ -1,0 +1,183 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-1: #171718;
+   --cor-2: #1f2124;
+   --cor-3: #393d42;
+   --cor-4: #6a6e73;
+   --cor-5: #9fa3a9;
+}
+
+*{
+    color:var(--cor-5);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-1);
+    font-family: 'Raleway';
+    line-height: 1;
+    margin: 0;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--cor-1);
+}
+
+.menu__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 25px;
+}
+
+/*Sessão Title*/
+.sobre__mim{
+    background-color: #393d42;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.title{
+    margin: 90px 130px 0 130px;
+}
+
+.title__div{
+    display: flex;
+    gap: 25px;
+}
+
+.title__profile{
+    border-radius: 50%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.title__bio{
+    font-size: 45px;
+}
+
+.title__network{
+    display: flex;
+    gap: 15px;
+    padding: 0%;
+}
+
+/*Sessão About*/
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+
+.skills{
+    margin-top: 30px;
+    }
+
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
